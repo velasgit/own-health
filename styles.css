@@ -62,11 +62,50 @@ a { text-decoration: none; color: inherit; }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 70% 90% at 85% 30%, rgba(180,230,240,0.55) 0%, transparent 60%),
-    radial-gradient(ellipse 80% 80% at 60% 50%, rgba(165,229,250,0.40) 0%, transparent 55%),
-    radial-gradient(ellipse 60% 100% at 20% 60%, rgba(140,210,235,0.28) 0%, transparent 50%),
     linear-gradient(135deg, #d5eef5 0%, #b8e2ef 25%, #a5dce8 50%, #c8ecf4 75%, #e0f4f8 100%);
   background-color: #d8f0f5;
+}
+
+.hero-card__bg::before,
+.hero-card__bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  will-change: transform, opacity;
+  pointer-events: none;
+}
+
+.hero-card__bg::before {
+  background:
+    radial-gradient(ellipse 70% 90% at 85% 30%, rgba(180,230,240,0.55) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 100% at 20% 60%, rgba(140,210,235,0.28) 0%, transparent 50%);
+  animation: lightDrift 12s ease-in-out infinite alternate;
+}
+
+.hero-card__bg::after {
+  background:
+    radial-gradient(ellipse 80% 80% at 60% 50%, rgba(165,229,250,0.40) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 70% at 40% 35%, rgba(195,238,248,0.25) 0%, transparent 55%);
+  animation: lightDrift 16s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes lightDrift {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  33% {
+    transform: translate(2%, -1.5%) scale(1.03);
+    opacity: 0.85;
+  }
+  66% {
+    transform: translate(-1.5%, 1%) scale(0.98);
+    opacity: 0.95;
+  }
+  100% {
+    transform: translate(1%, 2%) scale(1.02);
+    opacity: 0.88;
+  }
 }
 
 .hero-card__pinstripes {
