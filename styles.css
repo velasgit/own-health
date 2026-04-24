@@ -30,14 +30,13 @@ a { text-decoration: none; color: inherit; }
   box-shadow: 0 32px 80px rgba(0, 0, 0, 0.4);
 }
 
-/* ── Gradient ─────────────────────────── */
+/* ── Gradient: exported directly from Figma ── */
 
 .gradient-layer {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 70% 48% at 50% 108%, rgba(17,36,51,0.95) 0%, rgba(17,36,51,0.5) 30%, transparent 50%),
-    radial-gradient(ellipse 120% 58% at 50% 108%, rgba(61,183,238,0.5) 0%, rgba(61,183,238,0.25) 25%, transparent 50%),
+    url('assets/gradient-group.png') center bottom / 110% auto no-repeat,
     #ffffff;
 }
 
