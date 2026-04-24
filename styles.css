@@ -35,31 +35,10 @@ a { text-decoration: none; color: inherit; }
 .gradient-layer {
   position: absolute;
   inset: 0;
-  overflow: hidden;
-}
-
-.g-teal {
-  position: absolute;
-  width: 2610px;
-  height: 2610px;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -1660px;
-  border-radius: 50%;
-  background: #3DB7EE;
-  filter: blur(218px);
-}
-
-.g-dark {
-  position: absolute;
-  width: 2610px;
-  height: 2610px;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -1670px;
-  border-radius: 50%;
-  background: #112433;
-  filter: blur(54px);
+  background:
+    radial-gradient(ellipse 70% 48% at 50% 108%, rgba(17,36,51,0.95) 0%, rgba(17,36,51,0.5) 30%, transparent 50%),
+    radial-gradient(ellipse 120% 58% at 50% 108%, rgba(61,183,238,0.5) 0%, rgba(61,183,238,0.25) 25%, transparent 50%),
+    #ffffff;
 }
 
 /* ── Logo ─────────────────────────────── */
