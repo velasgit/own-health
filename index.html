@@ -13,34 +13,10 @@
 
   <section class="hero">
 
-    <!-- Gradient: Figma SVG ellipses, exact positions -->
+    <!-- Gradient: 3 blurred circles matching Figma ellipses -->
     <div class="gradient-layer" aria-hidden="true">
-
-      <!-- Ellipse 37: #112433 dark navy, blur 54, at (-354, -364) in hero coords -->
-      <svg class="grad-ellipse grad-ellipse--dark" viewBox="0 0 2828 2828" preserveAspectRatio="none">
-        <defs>
-          <filter id="blur-dark" x="-10%" y="-10%" width="120%" height="120%">
-            <feGaussianBlur stdDeviation="54" />
-          </filter>
-        </defs>
-        <circle cx="1414" cy="1414" r="1305" fill="#112433" filter="url(#blur-dark)" />
-      </svg>
-
-      <!-- Ellipse 35: #3DB7EE teal, blur 218, at (-362, 549) in hero coords -->
-      <svg class="grad-ellipse grad-ellipse--teal" viewBox="0 0 3483 3483" preserveAspectRatio="none">
-        <defs>
-          <filter id="blur-teal" x="-20%" y="-20%" width="140%" height="140%">
-            <feGaussianBlur stdDeviation="218" />
-          </filter>
-        </defs>
-        <circle cx="1741" cy="1741" r="1305" fill="#3DB7EE" filter="url(#blur-teal)" />
-      </svg>
-
-      <!-- Ellipse 34: White circle, no blur, at (-354, 436) -->
-      <svg class="grad-ellipse grad-ellipse--white" viewBox="0 0 2610 2610" preserveAspectRatio="none">
-        <circle cx="1305" cy="1305" r="1305" fill="white" />
-      </svg>
-
+      <div class="g-teal"></div>
+      <div class="g-dark"></div>
     </div>
 
     <!-- Logo -->
@@ -73,7 +49,7 @@
       </svg>
     </div>
 
-    <!-- Hero Content -->
+    <!-- Content -->
     <div class="hero__content">
       <h1 class="hero__title">Das Konto für<br>deine Gesundheit</h1>
       <p class="hero__subtitle">Alle deine Gesundheitsdaten an einem Ort.<br>Sicher,</p>

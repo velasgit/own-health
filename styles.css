@@ -1,8 +1,3 @@
-/* ========================================
-   OWN Health – Ghost Landing
-   1:1 from Figma (jPmA1T6U3HlYM39J0yFIyp)
-   ======================================== */
-
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 html {
@@ -12,7 +7,7 @@ html {
 
 body {
   background: #e8e8e8;
-  font-family: 'Outfit', 'DM Sans', sans-serif;
+  font-family: 'Outfit', sans-serif;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -22,10 +17,7 @@ body {
 
 a { text-decoration: none; color: inherit; }
 
-/* ========================================
-   HERO CARD
-   Figma: 1895 × 988, rounded-28, shadow
-   ======================================== */
+/* ── Hero Card ────────────────────────── */
 
 .hero {
   position: relative;
@@ -35,84 +27,42 @@ a { text-decoration: none; color: inherit; }
   background: #ffffff;
   border-radius: 28px;
   overflow: hidden;
-  box-shadow: 0px 32px 80px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.4);
 }
 
-/* ========================================
-   GRADIENT — Figma SVG ellipses
-   Positioned to match exact Figma coords.
-   Hero = 1895×988. Ellipse positions use
-   percentage equivalents of px values.
-   ======================================== */
+/* ── Gradient ─────────────────────────── */
 
 .gradient-layer {
   position: absolute;
   inset: 0;
-  pointer-events: none;
   overflow: hidden;
 }
 
-.grad-ellipse {
+.g-teal {
   position: absolute;
+  width: 2610px;
+  height: 2610px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -1660px;
+  border-radius: 50%;
+  background: #3DB7EE;
+  filter: blur(218px);
 }
 
-/*
-  Ellipse 37: #112433 dark navy
-  Figma pos: (-354, -364), size 2610×2610
-  As % of 1895×988:
-    left = -354/1895 = -18.68%
-    top  = -364/988  = -36.84%
-    w    = 2610/1895 = 137.73%
-    h    = 2610/988  = 264.17%
-*/
-.grad-ellipse--dark {
-  left: -18.68%;
-  top: -36.84%;
-  width: 137.73%;
-  height: 264.17%;
+.g-dark {
+  position: absolute;
+  width: 2610px;
+  height: 2610px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -1670px;
+  border-radius: 50%;
+  background: #112433;
+  filter: blur(54px);
 }
 
-/*
-  Ellipse 35: #3DB7EE teal, heavy blur
-  Figma pos: (-362, 549), size 2610×2610
-  SVG viewBox is 3483 (includes blur padding).
-  Scale factor: 3483/2610 = 1.3345
-  Rendered size = 2610 * 1.3345 = 3483
-  As % of hero:
-    w = 3483/1895 = 183.8%
-    h = 3483/988  = 352.4%
-  Offset to center the larger viewBox on the 2610 pos:
-    extra = (3483-2610)/2 = 436.5
-    left = (-362 - 436.5)/1895 = -42.14%
-    top  = (549 - 436.5)/988 = 11.38%
-*/
-.grad-ellipse--teal {
-  left: -42.14%;
-  top: 11.38%;
-  width: 183.8%;
-  height: 352.4%;
-}
-
-/*
-  Ellipse 34: white, no blur
-  Figma pos: (-354, 436), size 2610×2610
-  As % of hero:
-    left = -354/1895 = -18.68%
-    top  = 436/988   = 44.13%
-    w    = 137.73%
-    h    = 264.17%
-*/
-.grad-ellipse--white {
-  left: -18.68%;
-  top: 44.13%;
-  width: 137.73%;
-  height: 264.17%;
-}
-
-/* ========================================
-   LOGO
-   Figma: x=67 y=34, size ~47×47
-   ======================================== */
+/* ── Logo ─────────────────────────────── */
 
 .logo {
   position: absolute;
@@ -125,11 +75,7 @@ a { text-decoration: none; color: inherit; }
 .logo:hover { opacity: 0.6; }
 .logo svg { display: block; }
 
-/* ========================================
-   NAV
-   Figma: centered y=41, DM Sans Medium 14px,
-   gap 90px, color #1e1e1e
-   ======================================== */
+/* ── Nav ──────────────────────────────── */
 
 .nav {
   position: absolute;
@@ -152,10 +98,7 @@ a { text-decoration: none; color: inherit; }
 }
 .nav__link:hover { opacity: 0.5; }
 
-/* ========================================
-   DASHED DIVIDER
-   Figma: x=176 y=446 w=1187
-   ======================================== */
+/* ── Dashed Divider ───────────────────── */
 
 .divider {
   position: absolute;
@@ -166,10 +109,7 @@ a { text-decoration: none; color: inherit; }
   pointer-events: none;
 }
 
-/* ========================================
-   HERO CONTENT
-   Figma: centered, y=268, w=996
-   ======================================== */
+/* ── Hero Content ─────────────────────── */
 
 .hero__content {
   position: absolute;
@@ -184,8 +124,6 @@ a { text-decoration: none; color: inherit; }
   width: 996px;
 }
 
-/* Figma: Google Sans Medium 100px, #132532,
-   line-height 117px, tracking -2px, 870px wide */
 .hero__title {
   font-weight: 500;
   font-size: 100px;
@@ -196,8 +134,6 @@ a { text-decoration: none; color: inherit; }
   width: 870px;
 }
 
-/* Figma: Google Sans Regular 34px, #132532,
-   line-height 1.7 */
 .hero__subtitle {
   font-weight: 400;
   font-size: 34px;
@@ -207,12 +143,7 @@ a { text-decoration: none; color: inherit; }
   width: 100%;
 }
 
-/* ========================================
-   WAITLIST FORM
-   Figma: 704px pill, bg rgba(255,255,255,0.1)
-   border: 1px solid rgba(255,255,255,0.15)
-   padding: 10px 10px 10px 50px
-   ======================================== */
+/* ── Waitlist Form ────────────────────── */
 
 .waitlist {
   display: flex;
@@ -223,8 +154,6 @@ a { text-decoration: none; color: inherit; }
   background: rgba(255, 255, 255, 0.10);
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 100px;
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
 }
 
 .waitlist__input {
@@ -243,12 +172,8 @@ a { text-decoration: none; color: inherit; }
 
 .waitlist__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
 }
 
-/* Figma: white bg, #112433 text, 16px Medium,
-   padding 24px 30px, pill shape */
 .waitlist__btn {
   font-family: 'Outfit', sans-serif;
   font-weight: 500;
@@ -270,9 +195,7 @@ a { text-decoration: none; color: inherit; }
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 }
 
-/* ========================================
-   SCROLL ARROW
-   ======================================== */
+/* ── Scroll Arrow ─────────────────────── */
 
 .scroll-arrow {
   position: absolute;
@@ -288,9 +211,7 @@ a { text-decoration: none; color: inherit; }
   opacity: 0.6;
 }
 
-/* ========================================
-   RESPONSIVE
-   ======================================== */
+/* ── Responsive ───────────────────────── */
 
 @media (max-width: 1400px) {
   .hero__content { width: 85%; }
@@ -326,11 +247,7 @@ a { text-decoration: none; color: inherit; }
     gap: 10px;
     width: 100%;
   }
-  .waitlist__input {
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-  }
+  .waitlist__input { width: 100%; text-align: center; padding: 10px 0; }
   .waitlist__btn { width: 100%; padding: 18px 24px; }
   .nav { gap: 20px; }
   .nav__link { font-size: 11px; }
