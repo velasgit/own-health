@@ -3,260 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OWN Health – Orientierung in deiner Gesundheit</title>
+  <title>OWN Health – Das Konto für deine Gesundheit</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Geist+Mono:wght@400;500&family=Rethink+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Product+Sans:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <div class="page">
+  <section class="hero">
 
-    <!-- ====== HERO CARD ====== -->
-    <section class="hero-card">
+    <!-- Gradient -->
+    <div class="gradient-layer" aria-hidden="true"></div>
 
-      <div class="hero-card__bg" aria-hidden="true"></div>
-      <div class="hero-card__pinstripes" aria-hidden="true"></div>
+    <!-- Logo -->
+    <a href="#" class="logo" aria-label="OWN Health">
+      <svg width="47" height="47" viewBox="0 0 46.9117 46.9117" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7.63213 23.4559C7.63213 14.7167 14.7167 7.63213 23.4559 7.63213C32.195 7.63213 39.2482 14.5335 39.2482 23.2726C39.2482 23.7172 39.2297 24.32 39.2232 24.7743H46.8738C46.8976 24.3374 46.9117 23.8982 46.9117 23.4559C46.9106 10.5011 36.4096 0 23.4559 0C10.5022 0 0 10.5011 0 23.4559C0 36.4106 10.5011 46.9117 23.4559 46.9117C23.8191 46.9117 24.1791 46.902 24.538 46.8857V39.2417C24.1802 39.2655 23.8202 39.2796 23.4559 39.2796C14.7167 39.2796 7.63213 32.195 7.63213 23.4559Z" fill="#232729"/>
+        <path d="M39.1581 24.7742H31.8621V46.9116H39.1581V24.7742Z" fill="#232729"/>
+        <path d="M46.0551 39.2846V31.9886H24.6083V39.2846H46.0551Z" fill="#232729"/>
+      </svg>
+    </a>
 
-      <div class="dots" aria-hidden="true">
-        <span class="dot dot--lg" style="top:17%;left:73%"></span>
-        <span class="dot dot--lg" style="top:14%;left:81%"></span>
-        <span class="dot dot--lg" style="top:18%;left:86%"></span>
-        <span class="dot dot--lg" style="top:26%;left:89%"></span>
-        <span class="dot dot--lg" style="top:30%;left:90%"></span>
-        <span class="dot dot--lg" style="top:44%;left:86%"></span>
-        <span class="dot dot--lg" style="top:48%;left:81%"></span>
-        <span class="dot dot--lg" style="top:27%;left:74%"></span>
-        <span class="dot dot--md" style="top:36%;left:22%"></span>
-        <span class="dot dot--md" style="top:36%;left:28%"></span>
-        <span class="dot dot--md" style="top:40%;left:32%"></span>
-        <span class="dot dot--md" style="top:64%;left:28%"></span>
-        <span class="dot dot--md" style="top:62%;left:20%"></span>
-        <span class="dot dot--md" style="top:64%;left:24%"></span>
-        <span class="dot dot--md" style="top:55%;left:17%"></span>
-        <span class="dot dot--md" style="top:42%;left:19%"></span>
-        <span class="dot dot--sm" style="top:34%;left:55%"></span>
-        <span class="dot dot--sm" style="top:47%;left:55%"></span>
-        <span class="dot dot--sm" style="top:57%;left:42%"></span>
-        <span class="dot dot--sm" style="top:54%;left:38%"></span>
-        <span class="dot dot--sm" style="top:26%;left:44%"></span>
-        <span class="dot dot--sm" style="top:21%;left:46%"></span>
-        <span class="dot dot--sm" style="top:18%;left:51%"></span>
-        <span class="dot dot--sm" style="top:22%;left:60%"></span>
-        <span class="dot dot--lg" style="top:75%;left:29%"></span>
-        <span class="dot dot--lg" style="top:56%;left:6%"></span>
-        <span class="dot dot--lg" style="top:79%;left:5%"></span>
-        <span class="dot dot--lg" style="top:26%;left:4%"></span>
-        <span class="dot dot--md" style="top:73%;left:43%"></span>
-        <span class="dot dot--lg" style="top:93%;left:72%"></span>
-        <span class="dot dot--sm" style="top:88%;left:56%"></span>
-        <span class="dot dot--sm" style="top:86%;left:68%"></span>
-      </div>
+    <!-- Navigation -->
+    <nav class="nav">
+      <a href="#" class="nav__link">START</a>
+      <a href="#" class="nav__link">IMPRESSUM</a>
+      <a href="#" class="nav__link">DATENSCHUTZ</a>
+      <a href="#" class="nav__link">AGB</a>
+    </nav>
 
-      <!-- Figma-exported Logo -->
-      <a href="#" class="logo" aria-label="OWN Health">
-        <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M7.63213 23.4559C7.63213 14.7167 14.7167 7.63213 23.4559 7.63213C32.195 7.63213 39.2482 14.5335 39.2482 23.2726C39.2482 23.7172 39.2297 24.32 39.2232 24.7743H46.8738C46.8976 24.3374 46.9117 23.8982 46.9117 23.4559C46.9106 10.5011 36.4096 0 23.4559 0C10.5022 0 0 10.5011 0 23.4559C0 36.4106 10.5011 46.9117 23.4559 46.9117C23.8191 46.9117 24.1791 46.902 24.538 46.8857V39.2417C24.1802 39.2655 23.8202 39.2796 23.4559 39.2796C14.7167 39.2796 7.63213 32.195 7.63213 23.4559Z" fill="#232729"/>
-          <path d="M39.1573 24.7742H31.8613V46.9116H39.1573V24.7742Z" fill="#232729"/>
-          <path d="M46.0547 39.2847V31.9886H24.608V39.2847H46.0547Z" fill="#232729"/>
-        </svg>
-      </a>
-
-      <!-- Navigation – Apple Liquid Glass -->
-      <nav class="nav glass">
-        <a href="#produkt" class="nav__link">Features</a>
-        <a href="#produkt" class="nav__link">Produkt</a>
-        <a href="#sicherheit" class="nav__link">Sicherheit</a>
-        <a href="#faq" class="nav__link">FAQ</a>
-      </nav>
-
-      <!-- Account CTA – Apple Liquid Glass -->
-      <a href="#" class="cta-account glass">
-        <span class="cta-account__label">Account</span>
-        <span class="cta-account__icon">
-          <span class="dotted-plus">
-            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="7.32656" cy="4.1404" r="0.955462" fill="white"/>
-              <circle cx="7.32656" cy="0.955462" r="0.955462" fill="white"/>
-              <circle cx="7.32656" cy="7.32534" r="0.955462" fill="white"/>
-              <circle cx="7.32656" cy="10.5099" r="0.955462" fill="white"/>
-              <circle cx="7.32656" cy="13.6948" r="0.955462" fill="white"/>
-              <circle cx="10.5094" cy="7.32411" r="0.955462" fill="white"/>
-              <circle cx="13.6949" cy="7.32424" r="0.955462" fill="white"/>
-              <circle cx="7.32579" cy="7.32411" r="0.955462" fill="white"/>
-              <circle cx="4.14024" cy="7.32411" r="0.955462" fill="white"/>
-              <circle cx="0.954694" cy="7.32411" r="0.955462" fill="white"/>
-            </svg>
-          </span>
-        </span>
-      </a>
-
-      <!-- Hero Content -->
-      <div class="hero-content">
-        <p class="hero-badge">1.847 MENSCHEN AUF DER WARTELISTE</p>
-        <h1 class="hero-title">Orientierung in<br>deiner Gesundheit.</h1>
-        <a href="#" class="cta-register">
-          <span class="cta-register__label">Register Now</span>
-          <span class="cta-register__icon">
-            <span class="dotted-plus">
-              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="7.32656" cy="4.1404" r="0.955462" fill="#232729"/>
-                <circle cx="7.32656" cy="0.955462" r="0.955462" fill="#232729"/>
-                <circle cx="7.32656" cy="7.32534" r="0.955462" fill="#232729"/>
-                <circle cx="7.32656" cy="10.5099" r="0.955462" fill="#232729"/>
-                <circle cx="7.32656" cy="13.6948" r="0.955462" fill="#232729"/>
-                <circle cx="10.5094" cy="7.32509" r="0.955462" fill="#232729"/>
-                <circle cx="13.6949" cy="7.32509" r="0.955462" fill="#232729"/>
-                <circle cx="7.32579" cy="7.32509" r="0.955462" fill="#232729"/>
-                <circle cx="4.14024" cy="7.32509" r="0.955462" fill="#232729"/>
-                <circle cx="0.954694" cy="7.32509" r="0.955462" fill="#232729"/>
-              </svg>
-            </span>
-          </span>
-        </a>
-      </div>
-
-      <p class="hero-tagline">Dein intelligentes<br>Gesundheitskonto.</p>
-
-    </section>
-
-    <!-- ====== CARDS ROW ====== -->
-    <div class="cards-row" id="produkt">
-
-      <a href="#" class="card card--produkt">
-        <div class="card__bg card__bg--teal"></div>
-        <div class="card__pinstripes"></div>
-        <div class="card__content">
-          <span class="card__overline">Prevention</span>
-          <h2 class="card__title">PRODUKT</h2>
-          <p class="card__desc">Wir ordnen Befunde, Verläufe und Therapien – ruhig, nachvollziehbar, in deiner Hand. Für Menschen, die Klarheit statt Chaos suchen.</p>
-        </div>
-        <span class="card__arrow">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3L11 8L6 13" stroke="#232729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </span>
-      </a>
-
-      <a href="#" class="card card--features">
-        <div class="card__bg card__bg--lavender"></div>
-        <div class="card__content">
-          <span class="card__overline">Prevention</span>
-          <h2 class="card__title">FEATURES</h2>
-        </div>
-        <span class="card__arrow">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3L11 8L6 13" stroke="#232729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </span>
-      </a>
-
+    <!-- Dashed Line -->
+    <div class="divider" aria-hidden="true">
+      <svg preserveAspectRatio="none" width="100%" height="1" viewBox="0 0 1187 0.2" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0.1" y1="0.1" x2="1186.9" y2="0.1" stroke="url(#lineGrad)" stroke-width="0.2" stroke-linecap="square" stroke-dasharray="4 10"/>
+        <defs>
+          <linearGradient id="lineGrad" x1="0" y1="0.7" x2="1187" y2="0.7" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#F2F2F2"/>
+            <stop offset="1" stop-color="#F2F2F2" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+      </svg>
     </div>
 
-    <!-- ====== TRUST METRICS ====== -->
-    <section class="trust">
-      <div class="trust__inner">
-        <div class="trust__item">
-          <span class="trust__number">104+</span>
-          <span class="trust__label">Biomarker</span>
-        </div>
-        <span class="trust__sep"></span>
-        <div class="trust__item">
-          <span class="trust__number">E2E</span>
-          <span class="trust__label">Verschlüsselt</span>
-        </div>
-        <span class="trust__sep"></span>
-        <div class="trust__item">
-          <span class="trust__number">DSGVO</span>
-          <span class="trust__label">Konform</span>
-        </div>
-        <span class="trust__sep"></span>
-        <div class="trust__item">
-          <span class="trust__number">0 €</span>
-          <span class="trust__label">Für immer</span>
-        </div>
-      </div>
-    </section>
+    <!-- Hero Content -->
+    <div class="hero__content">
+      <h1 class="hero__title">Das Konto für<br>deine Gesundheit</h1>
+      <p class="hero__subtitle">Alle deine Gesundheitsdaten an einem Ort.<br>Sicher,</p>
 
-    <!-- ====== FEATURE DETAIL ====== -->
-    <section class="features" id="sicherheit">
-      <div class="features__header">
-        <span class="section-label">Warum OWN</span>
-        <h2 class="features__title">Ruhe statt Rätselraten.</h2>
-        <p class="features__subtitle">Alles was du brauchst, um deine Gesundheit zu verstehen – an einem Ort, unter deiner Kontrolle.</p>
-      </div>
+      <form class="waitlist" action="#" method="post">
+        <input type="email" class="waitlist__input" placeholder="DEINE EMAIL" required>
+        <button type="submit" class="waitlist__btn">IN WARTELISTE EINTRAGEN</button>
+      </form>
+    </div>
 
-      <div class="features__grid">
-        <div class="feature-card">
-          <span class="feature-card__number">01</span>
-          <h3 class="feature-card__title">Ein Konto für alles</h3>
-          <p class="feature-card__desc">Befunde, Laborwerte, Verlauf und Therapien – zusammengeführt an einem sicheren Ort.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-card__number">02</span>
-          <h3 class="feature-card__title">KI mit Kontext</h3>
-          <p class="feature-card__desc">Einschätzungen, die deine komplette Diagnose und deinen Verlauf kennen – nicht nur einen Wert.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-card__number">03</span>
-          <h3 class="feature-card__title">Deine Datenhoheit</h3>
-          <p class="feature-card__desc">DSGVO-konform, Zero-Knowledge-Architektur – du entscheidest, wer was sieht. Niemand sonst.</p>
-        </div>
-      </div>
-    </section>
+    <!-- Scroll Arrow (Figma: nav-arrow-down in circle) -->
+    <div class="scroll-arrow" aria-hidden="true">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 5V19M12 19L6 13M12 19L18 13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
 
-    <!-- ====== BOTTOM CTA ====== -->
-    <section class="bottom-cta">
-      <div class="bottom-cta__card">
-        <div class="bottom-cta__gradient"></div>
-        <div class="bottom-cta__pinstripes"></div>
-        <div class="bottom-cta__content">
-          <span class="section-label section-label--light">Bereit?</span>
-          <h2 class="bottom-cta__title">Klarheit beginnt hier.</h2>
-          <p class="bottom-cta__desc">Kostenlos. Keine Kreditkarte. Deine Daten bleiben bei dir.</p>
-          <a href="#" class="cta-register cta-register--lg">
-            <span class="cta-register__label">Zur Warteliste</span>
-            <span class="cta-register__icon">
-              <span class="dotted-plus">
-                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="7.32656" cy="4.1404" r="0.955462" fill="#232729"/>
-                  <circle cx="7.32656" cy="0.955462" r="0.955462" fill="#232729"/>
-                  <circle cx="7.32656" cy="7.32534" r="0.955462" fill="#232729"/>
-                  <circle cx="7.32656" cy="10.5099" r="0.955462" fill="#232729"/>
-                  <circle cx="7.32656" cy="13.6948" r="0.955462" fill="#232729"/>
-                  <circle cx="10.5094" cy="7.32509" r="0.955462" fill="#232729"/>
-                  <circle cx="13.6949" cy="7.32509" r="0.955462" fill="#232729"/>
-                  <circle cx="7.32579" cy="7.32509" r="0.955462" fill="#232729"/>
-                  <circle cx="4.14024" cy="7.32509" r="0.955462" fill="#232729"/>
-                  <circle cx="0.954694" cy="7.32509" r="0.955462" fill="#232729"/>
-                </svg>
-              </span>
-            </span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ====== FOOTER ====== -->
-    <footer class="footer">
-      <div class="footer__top">
-        <div class="footer__brand">
-          <svg width="32" height="32" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7.63213 23.4559C7.63213 14.7167 14.7167 7.63213 23.4559 7.63213C32.195 7.63213 39.2482 14.5335 39.2482 23.2726C39.2482 23.7172 39.2297 24.32 39.2232 24.7743H46.8738C46.8976 24.3374 46.9117 23.8982 46.9117 23.4559C46.9106 10.5011 36.4096 0 23.4559 0C10.5022 0 0 10.5011 0 23.4559C0 36.4106 10.5011 46.9117 23.4559 46.9117C23.8191 46.9117 24.1791 46.902 24.538 46.8857V39.2417C24.1802 39.2655 23.8202 39.2796 23.4559 39.2796C14.7167 39.2796 7.63213 32.195 7.63213 23.4559Z" fill="rgba(35,39,41,0.2)"/>
-            <path d="M39.1573 24.7742H31.8613V46.9116H39.1573V24.7742Z" fill="rgba(35,39,41,0.2)"/>
-            <path d="M46.0547 39.2847V31.9886H24.608V39.2847H46.0547Z" fill="rgba(35,39,41,0.2)"/>
-          </svg>
-        </div>
-        <nav class="footer__nav">
-          <a href="#">Produkt</a>
-          <a href="#">Sicherheit</a>
-          <a href="#">Datenschutz</a>
-          <a href="#">Impressum</a>
-        </nav>
-      </div>
-      <div class="footer__bottom">
-        <span>&copy; 2026 OWN Health GmbH</span>
-      </div>
-    </footer>
-
-  </div>
+  </section>
 
 </body>
 </html>
